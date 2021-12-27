@@ -92,7 +92,21 @@ table {
 
 td, img {vertical-align: middle;}
 
-img {max-width: 100%;}
+img {
+    max-width: 100%;
+    -webkit-filter: grayscale(70%);
+    -moz-filter: grayscale(70%);
+    -o-filter: grayscale(70%);
+    -ms-filter: grayscale(70%);
+    filter: grayscale(70%);
+}
+img:hover {
+    -webkit-filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    -o-filter: grayscale(0%);
+    -ms-filter: grayscale(0%);
+    filter: grayscale(0%);
+}
 
 input[type=submit], input[type=button], input[type=reset], button, input[type=text], input[type=email], input[type=url], input[type=password], textarea, select, input[type=radio] {outline: none;}
 
