@@ -92,6 +92,8 @@ table {
 
 td, img {vertical-align: middle;}
 
+img {max-width: 100%;}
+
 input[type=submit], input[type=button], input[type=reset], button, input[type=text], input[type=email], input[type=url], input[type=password], textarea, select, input[type=radio] {outline: none;}
 
 input, select, input[type=radio] {vertical-align: middle;}
