@@ -39,8 +39,7 @@ header, footer, aside, nav, section, article, svg, canvas, figure, figcaption {d
     transition: 0.2s;
 }
 
-/*
- * base elements
+/* base elements
  */
 body {
   min-width: 320px; width: 100%;
@@ -65,7 +64,8 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {font-size: 400%;}
 h2 {font-size: 350%; text-transform: uppercase;}
-h3 {font-size: 300%; text-transform: uppercase;}
+.wrap > section:not(.wrap-doc) > h3 {font-size: 300%; text-transform: uppercase;}
+.wrap-doc h3 {font-size: 250%; text-transform: uppercase; font-weight: 600;}
 h4 {font-size: 150%; text-transform: lowercase;}
 
 p {
@@ -94,11 +94,11 @@ td, img {vertical-align: middle;}
 
 img {
     max-width: 100%;
-    -webkit-filter: grayscale(70%);
-    -moz-filter: grayscale(70%);
-    -o-filter: grayscale(70%);
-    -ms-filter: grayscale(70%);
-    filter: grayscale(70%);
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    filter: grayscale(100%);
 }
 img:hover {
     -webkit-filter: grayscale(0%);
@@ -131,19 +131,22 @@ input[type=submit], input[type=button], input[type=reset], button:not(.btn) {
 button.btn {
     width: 60px; height: 60px;
     background-color: transparent;
-    border: 1px solid #fff;
+    border-width: 2px;
+    border-style: solid;
     border-radius: 50%;
-    color: #fff;
 }
+.wrap-welcome button.btn {color: #000;}
+.wrap-services button.btn {color: #fff;}
 button.btn:hover {opacity: .6;}
 
 a.btn-global {
     display: inline-block;
     margin: 10px 0; padding: 15px 30px;
-    background-color: #000;
     border-radius: 6px;
-    color: #fff; text-decoration: none;
+    text-decoration: none;
 }
+.wrap > section:not(.wrap-revievs) a.btn-global {background-color: #181818; color: #fff;}
+.wrap > .wrap-revievs + .wrap-welcome a.btn-global {background-color: #fff; color: #181818;}
 a.btn-global:hover {opacity: .6;}
 
 input[type=submit]:hover, input[type=button]:hover, input[type=reset]:hover, button:hover {}
@@ -191,8 +194,7 @@ option {
     color: #f4f4f4;
 }
 
-/*
- * Стилизация скроллбара
+/* Стилизация скроллбара
  */
 *, html * {
     scrollbar-color: #1e1e20 white;
@@ -213,8 +215,7 @@ option {
     background-color: #1e1e20
 }
 
-/*
- * Выделение
+/* Выделение
  */
 ::selection {
     background-color: #962715;
@@ -229,8 +230,7 @@ option {
     color: #eee;
 }
 
-/*
- * base class
+/* base class
  */
 .p_relative {position: relative;}
 .p_absolute {position: absolute;}
@@ -243,7 +243,7 @@ option {
 .fr {float: right;}
 
 .base_width {width: 100%;}
-.media_base_width {max-width: 1100px;}
+.media_base_width {width: 1100px; max-width: 1100px;}
 
 .max {width: 50%;}
 .maxer {width: 70%;}
@@ -273,8 +273,7 @@ option {
 .t_center {text-align: center;}
 .t_right {text-align: right;}
 
-/*
- * Фильтры
+/* Фильтры
  */
 .black_and_white {
     -webkit-filter: grayscale(70%);
@@ -298,8 +297,9 @@ option {
     filter: brightness(50%);
 }
 
-/* Контейнеры + clearfix
+/* Контейнеры и пр.
 ==============================
+ * Cover
  */
 .cover-table {
     z-index: 1;
@@ -334,6 +334,8 @@ option {
 
 .cover-cont h1 {font-weight: 400;}
 
+/* Лого
+ */
 .hat {
     z-index: 2;
     position: sticky;
@@ -381,11 +383,15 @@ option {
 .hat:hover .hat-container .hat-icon+.hat-icon {transform: rotate(-5deg);}
 .hat:hover .hat-container .hat-icon+.hat-icon+.hat-icon {transform: rotate(5deg);}
 
+/* Подложка
+ */
 .overlay {
     z-index: 3;
     background-color: rgba(255, 255, 255, .7);
 }
 
+/* Меню
+ */
 .main-menu {
     z-index: 3;
     min-width: 200vh;
@@ -443,6 +449,8 @@ nav a {
 }
 nav a:hover {opacity: .6;}
 
+/* Контейнеры
+ */
 .wrap {
     z-index: 1;
     height: auto;
@@ -467,42 +475,59 @@ nav a:hover {opacity: .6;}
 .wrap h4.border-white:after {background-color: #fff;}
 
 .wrap-welcome {
-    padding: 10vw 10% 5vw;
+    padding-right: 10%; padding-left: 10%;
     color: #000;
 }
 
-.welcome-info, .wrap-revievs {
-    padding: 5vw 0;
-    color: #000;
-}
+.wrap > .wrap-welcome:first-child {padding-top: 100px;}
 
-.wrap-revievs .fl, .wrap-revievs .fr {height: 300px;}
-
-.reviev {
-    width: 90%; height: 90%;
-    background-color: #000;
-}
-
-.wrap-services {
-    padding: 5vw 10%;
+.wrap > .wrap-revievs + .wrap-welcome, .wrap-services {
+    padding-top: 50px;
     background-color: #1a1718;
     color: #fff;
 }
 
-.shoes {
-    height: 200px;
-    border-top: 1px solid #120e0f;
-    color: #fff;
+.wrap > .wrap-revievs + .wrap-welcome {margin-top: 30px; padding-bottom: 20px;}
+
+.wrap-services, .wrap-doc {padding-bottom: 50px;}
+
+.welcome-info, .wrap-revievs {color: #000;}
+
+.wrap-revievs .fl, .wrap-revievs .fr {height: 300px;}
+
+.wrap-doc {padding-top: 10px;}
+
+.wrap > .wrap-revievs + .wrap-welcome h3, .wrap-doc h3 {padding-bottom: 20px;}
+
+/* Grid Item
+ */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5vh 2.8vw;
+    width: 60vw;
+    font-style: normal; font-family: 'Philosopher', sans-serif;
 }
 
-/*
- * Frame
+.grid__item {display: inline-grid;}
+
+.grid__item img {
+    max-width: 100%;
+    -webkit-transition: all linear .25s;
+    transition: all linear .25s;
+}
+
+.grid__item img:hover {
+    -webkit-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+}
+
+/* Скроллеры
  */
 .frame {height: 250px;}
 
 .frame ul {
     list-style: none;
-    height: 100%;
     font-size: 120%;
 }
 
@@ -519,7 +544,8 @@ nav a:hover {opacity: .6;}
     color: #fff;
 }
 
-/* Scrollbar */
+/* Scrollbar
+ */
 .scrollbar {
     height: 2px;
     margin: 0 0 1em 0;
@@ -528,28 +554,24 @@ nav a:hover {opacity: .6;}
 }
 
 .scrollbar .handle {
-    width: 100px; height: 100%;
     background: #292a33;
     cursor: pointer;
 }
 
-.scrollbar .handle .mousearea {
-    position: absolute;
-    width: 100%; height: 20px;
-    top: -9px; left: 0;
-}
+.scrollbar .handle .mousearea {height: 20px;}
 
-/* Controls */
-.controls {
-    margin: 25px 0;
-    text-align: center;
-}
+/* Controls
+ */
+.controls {margin: 25px 0;}
 
-/* One Item Per Frame example*/
-.oneperframe {
-    height: 300px;
-    line-height: 300px;
-}
-
-.oneperframe ul li {width: 1140px;}
+/* One Item Per Frame example
+ */
 .oneperframe ul li.active {background: #333;}
+
+/* Подвал
+ */
+.shoes {
+    height: 200px;
+    border-top: 1px solid #120e0f;
+    color: #fff;
+}
