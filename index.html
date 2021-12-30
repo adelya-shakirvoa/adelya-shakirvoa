@@ -2,10 +2,24 @@
 <html lang="ru">
 <head>
     <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-    <title>Аделя Шакировой: Бухгалтерские и IT услуги</title>
-    <meta name="description" content="Аделя Шакировой: Бухгалтерские и IT услуги" />
+    <title>Аделя Шакирова: Бухгалтерия и IT-услуги</title>
+    <meta name="description" content="Аделя Шакирова: Бухгалтерские и IT услуги" />
+
+    <meta property="og:locale" content="ru" />
+    <meta property="og:site_name" content="Аделя Шакирова" />
+    <meta property="og:title" content="Главная страница" />
+    <meta property="og:description" content="Бухгалтерия и IT-услуги" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://adelbuh.ru" />
+    <meta property="og:image" content="img/cover.png" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Аделя Шакирова" />
+    <meta name="twitter:description" content="Бухгалтерия и IT-услуги"" />
+    <meta name="twitter:image" content="img/cover.png" />
+
+    <link rel="canonical" href="https://adelbuh.ru" />
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&family=Poiret+One&display=swap" />
     <link href="css/style.css?ver=2.7" rel="stylesheet" />
@@ -14,11 +28,11 @@
 
 <body>
 
-    <section class="cover-table base_width p_relative">
+    <section class="base_width p_relative cover-table">
         <div class="t_center media_base_width cover-tb">
             <div class="cover-cont">
 
-                <h1>Бухгалтерские и IT услуги</h1>
+                <h1>Бухгалтерия и IT-услуги</h1>
                 <p class="hide">
                     <i class="fa fa-play-circle-o" aria-hidden="true"></i> смотреть видео
                 </p>
@@ -53,9 +67,10 @@
             <nav>
                 <ul>
 
-                    <li class="t_center base_width p_relative"><a href="#">Тестовое</a></li>
-                    <li class="t_center base_width p_relative"><a href="#">Тестовое</a></li>
-                    <li class="t_center base_width p_relative"><a href="#">Тестовое</a></li>
+                    <li class="t_center base_width p_relative"><a href="/aboutme">Обо мне</a></li>
+                    <li class="t_center base_width p_relative"><a href="/revievs">Отзывы</a></li>
+                    <li class="t_center base_width p_relative"><a href="/services">Услуги</a></li>
+                    <li class="t_center base_width p_relative"><a href="/publ">Статьи</a></li>
                     <li class="t_right max fl p_relative"><a href="https://vk.com/adelbuh" target="_blank">
                         <i class="fa fl fa-vk" aria-hidden="true"></i>
                     </a></li>
@@ -70,7 +85,6 @@
     </div>
 
     <div class="castration base_width p_relative wrap">
-
         <section class="t_center castration center media_base_width wrap-welcome">
 
             <h4 class="border-black p_relative">
@@ -79,150 +93,124 @@
             <h2>Вкратце обо мне</h2>
             <p>Меня зовут Аделя. Я бухгалтер с десятилетним стажем опыта.</p>
 
-            <div class="welcome-info">
+        </section>
 
-                <p>
-                    Если вам нужна помощь с бухгалтерией, вы попали по адресу! <br /> 
-                    <a class="btn-global" href="#">Бесплатная консультация</a>
-                </p>
-                <p>Мои сертификаты</p>
+        <section class="t_center castration center media_base_width wrap-revievs">
 
-                <div class="scrollbar">
-                    <div class="handle">
-                        <div class="mousearea"></div>
-                    </div>
+            <p>Вместо тысячи слов, отзывы моих клиентов</p>
+
+            <div class="scrollbar">
+                <div class="base_height base_width handle">
+                    <div class="tl p_absolute mousearea"></div>
                 </div>
-
-                <div class="castration oneperframe" id="welcome">
-                    <ul class="clearfix">
-
-                        <li class="t_center base_height fl">
-                            <img src="img/doc/1.png" />
-                        </li>
-                        <li class="t_center base_height fl">
-                            <img src="img/doc/2.png" />
-                        </li>
-                        <li class="t_center base_height fl">
-                            <img src="img/doc/3.png" />
-                        </li>
-                        <li class="t_center base_height fl">
-                            <img src="img/doc/4.png" />
-                        </li>
-
-                    </ul>
-                </div>
-
-                <div class="controls center">
-
-                    <button class="btn prev">
-                        <i class="fa fa-arrow-circle-left" aria-hidden="true"></i>
-                    </button>
-                    <button class="btn next">
-                        <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
-                    </button>
-
-                </div>
-
-                <p>
-                    <a class="btn-global" href="#">отзывы</a>
-                    <a class="btn-global" href="#">услуги</a>
-                </p>
-
             </div>
 
-            <div class="t_center center base_width wrap-revievs">
+            <div class="castration oneperframe" id="revievs">
+                <ul class="base_height clearfix">
 
-                <h4 class="border-black p_relative">
-                    <span>Отзывы</span>
-                </h4>
-                <p>Вместо тысячи моих слов, пара десятков слов клиентов</p>
+                    <li class="t_center base_height media_base_width fl">
+                        <iframe class="base_height base_width" src="https://vk.com/video_ext.php?oid=-209795771&id=456239017&hash=fe227b50c3d6368b&hd=1" allow="autoplay; encrypted-media; fullscreen; picture-in-picture;" allowfullscreen></iframe>
+                    </li>
+                    <li class="t_center base_height media_base_width fl">
+                        <iframe class="base_height base_width" src="https://vk.com/video_ext.php?oid=-209795771&id=456239018&hash=4047c4433863bdeb&hd=1" allow="autoplay; encrypted-media; fullscreen; picture-in-picture;" allowfullscreen></iframe>
+                    </li>
 
-                <div class="scrollbar">
-                    <div class="handle">
-                        <div class="mousearea"></div>
-                    </div>
-                </div>
+                </ul>
+            </div>
 
-                <div class="castration oneperframe" id="revievs">
-                    <ul class="clearfix">
+            <div class="t_center center controls">
 
-                        <li class="t_center base_height fl">
-                            <iframe class="base_height base_width" src="https://vk.com/video_ext.php?oid=-209795771&id=456239017&hash=fe227b50c3d6368b&hd=1" allow="autoplay; encrypted-media; fullscreen; picture-in-picture;" frameborder="0" allowfullscreen></iframe>
-                        </li>
-                        <li class="t_center base_height fl">
-                            <iframe class="base_height base_width" src="https://vk.com/video_ext.php?oid=-209795771&id=456239018&hash=4047c4433863bdeb&hd=1" allow="autoplay; encrypted-media; fullscreen; picture-in-picture;" frameborder="0" allowfullscreen></iframe>
-                        </li>
-
-                    </ul>
-                </div>
-
-                <div class="controls center">
-
-                    <button class="btn prev">
-                        <i class="fa fa-arrow-circle-left" aria-hidden="true"></i>
-                    </button>
-                    <button class="btn next">
-                        <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
-                    </button>
-
-                </div>
+                <button class="btn prev">
+                    <i class="fa fa-arrow-circle-left" aria-hidden="true"></i>
+                </button>
+                <button class="btn next">
+                    <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                </button>
 
             </div>
 
         </section>
 
-        <section class="t_center center base_width wrap-services">
-            <div class="center media_base_width">
+        <section class="t_center castration center base_width wrap-welcome">
 
-                <h4 class="border-white p_relative">
-                    <span>Услуги</span>
-                </h4>
-                <h3>для вас</h3>
+            <p>
+                Если вам нужна помощь с бухгалтерией, вы попали по адресу! <br /> 
+                <a class="btn-global" href="#">Бесплатная консультация</a> <a class="scroll-to btn-global" href="#title-services">Услуги</a>
+            </p>
 
-                <div class="scrollbar">
-                    <div class="handle">
-                        <div class="mousearea"></div>
-                    </div>
-                </div>
+            <h4 class="border-white p_relative">
+                <span>И, кстати...</span>
+            </h4>
 
-                <div class="castration frame" id="services">
-                    <ul class="clearfix">
-
-                        <li class="t_center base_height fl">Составляю и отправляю отчетность в налоговую (ОСН, УСН, ЕНВД), пенсионный, соцстрах и статистику по приятным ценам!</li>
-                        <li class="t_center base_height fl">Работа с заключением договора c указанием полной ответственности на дальнейшее бухгалтерское обслуживание, как и любая разовая бухгалтерская помощь, так и полное ведение бух.учета, при заключении договоров- консультации бесплатно.</li>
-                        <li class="t_center base_height fl">Оптимизация налогообложения, предварительный расчет налогов до окончания квартала.</li>
-                        <li class="t_center base_height fl">Восстановление бухучета и сдача уточненок.</li>
-                        <li class="t_center base_height fl">Кадровое делопроизводство.</li>
-                        <li class="t_center base_height fl">Подготовка документов к возмещению из ФСС.</li>
-                        <li class="t_center base_height fl">Подготовка к камеральным и выездным проверкам, работа с требованиями.</li>
-                        <li class="t_center base_height fl">Внешнеэкономическая деятельность (импорт, экспорт НДС со странами ТС).</li>
-                        <li class="t_center base_height fl">Регистрация ООО и ИП. Ликвидация ИП. Внесение изменений в ЕГРН.</li>
-                        <li class="t_center base_height fl">Анализ хоз.деятельности, управленческая отчетность.</li>
-                        <li class="t_center base_height fl">Установка 1С, обучение, любые IT-услуги.</li>
-
-                    </ul>
-                </div>
-
-                <div class="controls center">
-
-                    <button class="btn prev">
-                        <i class="fa fa-arrow-circle-left" aria-hidden="true"></i>
-                    </button>
-                    <button class="btn next">
-                        <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
-                    </button>
-
-                </div>
-
-            </div>
         </section>
 
+        <section class="t_center castration center media_base_width wrap-doc">
+
+            <h3>Мои дипломы</h3>
+
+            <div class="center grid">
+                <div class="t_center p_relative grid__item"><img src="img/doc/3.png" /></div>
+                <div class="t_center p_relative grid__item"><img src="img/doc/2.png" /></div>
+                <div class="t_center p_relative grid__item"><img src="img/doc/1.png" /></div>
+                <div class="t_center p_relative grid__item"><img src="img/doc/4.png" /></div>
+            </div>
+
+        </section>
+
+        <section class="t_center castration center base_width wrap-services">
+
+            <h4 class="border-white p_relative">
+                <span id="title-services">Услуги</span>
+            </h4>
+            <h3>для вас</h3>
+
+            <div class="scrollbar">
+                <div class="base_height base_width handle">
+                    <div class="tl p_absolute mousearea"></div>
+                </div>
+            </div>
+
+            <div class="castration base_width frame" id="services">
+                <ul class="base_height clearfix">
+
+                    <li class="t_center base_height fl">Составляю и отправляю отчетность в налоговую (ОСН, УСН, ЕНВД), пенсионный, соцстрах и статистику по приятным ценам!</li>
+                    <li class="t_center base_height fl">Работа с заключением договора c указанием полной ответственности на дальнейшее бухгалтерское обслуживание, как и любая разовая бухгалтерская помощь, так и полное ведение бух.учета, при заключении договоров- консультации бесплатно.</li>
+                    <li class="t_center base_height fl">Оптимизация налогообложения, предварительный расчет налогов до окончания квартала.</li>
+                    <li class="t_center base_height fl">Восстановление бухучета и сдача уточненок.</li>
+                    <li class="t_center base_height fl">Кадровое делопроизводство.</li>
+                    <li class="t_center base_height fl">Подготовка документов к возмещению из ФСС.</li>
+                    <li class="t_center base_height fl">Подготовка к камеральным и выездным проверкам, работа с требованиями.</li>
+                    <li class="t_center base_height fl">Внешнеэкономическая деятельность (импорт, экспорт НДС со странами ТС).</li>
+                    <li class="t_center base_height fl">Регистрация ООО и ИП. Ликвидация ИП. Внесение изменений в ЕГРН.</li>
+                    <li class="t_center base_height fl">Анализ хоз.деятельности, управленческая отчетность.</li>
+                    <li class="t_center base_height fl">Установка 1С, обучение, любые IT-услуги.</li>
+
+                </ul>
+            </div>
+
+            <div class="t_center center controls">
+
+                <button class="btn prev">
+                    <i class="fa fa-arrow-circle-left" aria-hidden="true"></i>
+                </button>
+                <button class="btn next">
+                    <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                </button>
+
+            </div>
+
+        </section>
     </div>
 
     <footer class="bl base_width p_fixed shoes">
         <div class="center media_base_width p_relative">
 
-            <p>Все права защищены</p>
+            <p>Аделя Шакирова: Бухгалтерия и IT-услуги</p>
+            <p>
+                <strong>Мои реквизиты:</strong> <br />
+                ИНН: 022404533900
+                ИП Шакирова А.Ф.
+            </p>
 
         </div>
     </footer>
