@@ -238,7 +238,7 @@ option {
 }
 
 @media all and (max-width: 1100px) {
-    .media_base_width {width: 100%; max-width: 100%;}
+    .media_base_width {width: 99vw; max-width: 99vw;}
 }
 
 .max {width: 50%;}
@@ -507,19 +507,34 @@ nav a:hover {opacity: .6;}
  */
 .grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
     gap: 5vh 2.8vw;
     width: 60vw;
     font-style: normal; font-family: 'Philosopher', sans-serif;
 }
 
+@media all and (min-width: 1100px) {
+    .grid {grid-template-columns: repeat(2, 1fr);}
+}
+
+@media all and (max-width: 1100px) {
+    .grid {grid-template-columns: repeat(1, 1fr);}
+}
+
 .grid__item {
     display: inline-grid;
     height: 50vh;
+    border: 7px double #1a1718;
+}
+.grid__item:hover {
+    background-size: 80%;
+    -webkit-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+}
+
+.grid__item > div {
     background-size: cover;
     background-position: 50% 50%;
     background-repeat: no-repeat;
-    border: 7px double #1a1718;
     -webkit-transition: all linear .25s;
     transition: all linear .25s;
     -webkit-filter: grayscale(100%);
@@ -528,18 +543,13 @@ nav a:hover {opacity: .6;}
     -ms-filter: grayscale(100%);
     filter: grayscale(100%);
 }
-.grid__item:hover {
+.grid__item > div:hover {
+    z-index: 1;
     -webkit-filter: grayscale(0%);
     -moz-filter: grayscale(0%);
     -o-filter: grayscale(0%);
     -ms-filter: grayscale(0%);
     filter: grayscale(0%);
-}
-
-.grid__item:hover {
-    background-size: 80%;
-    -webkit-transform: rotate(-5deg);
-    transform: rotate(-5deg);
 }
 
 /* Скроллеры
