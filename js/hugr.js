@@ -1,157 +1,85 @@
-jQuery(function($) {
+let hat = $('.hat'), 
+    menu = $('.main-menu'), 
+    menuBack = $('.main-menu-back'), 
+    menuClose = $('.menu-close'), 
+    overlay = $('.overlay');
 
-    'use strict';
+const testimonials = document.querySelector('.testimonials');
+const scroller = testimonials.querySelector('.scroller');
+const nextBtn = testimonials.querySelector('.btn.next');
+const prevBtn = testimonials.querySelector('.btn.prev');
+const itemWidth = testimonials.querySelector('.item').clientWidth;
 
-    let hat = $('.hat'), 
-        menu = $('.main-menu'), 
-        menuBack = $('.main-menu-back'), 
-        menuClose = $('.menu-close'), 
-        overlay = $('.overlay');
+$(window).on('scroll', function() {
+    // scroll cover
+    let scrollCoef = 0.0035;
 
-    $(window).on('scroll', function() {
-        // scroll cover
-        let scrollCoef = 0.0035;
-
-        $('.cover-cont > *').css({
-            opacity: 1 - $(window).scrollTop() * scrollCoef
-        });
+    $('.cover-cont > *').css({
+        opacity: 1 - $(window).scrollTop() * scrollCoef
     });
-    // for menu
-    hat.click(function() {
-        toggleNav();
+});
+
+// for menu
+hat.click(function() {
+    toggleNav();
+});
+
+menuClose.click(function() {
+    toggleNav();
+});
+
+function toggleNav() {
+    menu.toggleClass('show');
+    overlay.toggleClass('show');
+}
+
+// scroll for button
+$("a.scroll-to").on("click", function(e) {
+
+    e.preventDefault();
+    let anchor = $(this).attr('href');
+
+    toggleNav();
+
+    $('html, body').stop().animate({
+        scrollTop: $(anchor).offset().top - 60
+    }, 800);
+});
+
+// Scroller
+nextBtn.addEventListener('click', scrollToNextItem);
+prevBtn.addEventListener('click', scrollToPrevItem);
+
+function scrollToNextItem() {
+    scroller.scrollBy({left: itemWidth, top: 0, behavior: 'smooth'});
+}
+function scrollToPrevItem() {
+    scroller.scrollBy({left: -itemWidth, top: 0, behavior: 'smooth'});
+}
+
+function scrollToNextItem() {
+    if (scroller.scrollLeft < (scroller.scrollWidth - itemWidth))
+        // Позиция прокрутки расположена не в начале последнего элемента
+        scroller.scrollBy({left: itemWidth, top: 0, behavior:'smooth'});
+    else
+        // Достигнут последний элемент. Возвращаемся к первому элементу, установив для позиции прокрутки 0
+        scroller.scrollTo({left: 0, top: 0, behavior:'smooth'});
+}
+
+function scrollToPrevItem() {
+    if (scroller.scrollLeft != 0)
+        // Позиция прокрутки расположена не в начале последнего элемента
+        scroller.scrollBy({left: -itemWidth, top: 0, behavior:'smooth'});
+    else
+        // Это первый элемент. Переходим к последнему элементу, установив для позиции прокрутки ширину скроллера
+        scroller.scrollTo({left: scroller.scrollWidth, top: 0, behavior:'smooth'});
+}
+
+// Tabs
+$(function() {
+    $('ul.tabs__caption').on('click', 'li:not(.active)', function() {
+        $(this)
+            .addClass('active').siblings().removeClass('active')
+            .closest('div.tabs').find('div.tabs__content').removeClass('active').eq($(this).index()).addClass('active');
     });
-
-    menuClose.click(function() {
-        toggleNav();
-    });
-
-    function toggleNav() {
-        menu.toggleClass('show');
-        overlay.toggleClass('show');
-    }
-
-    // scroll for button
-    $("a.scroll-to").on("click", function(e) {
-
-        e.preventDefault();
-        let anchor = $(this).attr('href');
-
-        toggleNav();
-
-        $('html, body').stop().animate({
-            scrollTop: $(anchor).offset().top - 60
-        }, 800);
-    });
-
-    // Sliders
-    (function () {
-        // Basic Navigation
-        let $frame = $('#revievs');
-        let $slidee = $frame.children('ul').eq(0);
-        let $wrap = $frame.parent();
-        // Call Sly on frame
-        $frame.sly({
-            horizontal: 1,
-            itemNav: 'forceCentered',
-            smart: 1,
-            activateMiddle: 1,
-            mouseDragging: 1,
-            touchDragging: 1,
-            releaseSwing: 1,
-            startAt: 0,
-            scrollBar: $wrap.find('.scrollbar'),
-            scrollBy: 1,
-            speed: 300,
-            elasticBounds: 1,
-            easing: 'easeOutExpo',
-            dragHandle: 1,
-            dynamicHandle: 1,
-            clickBar: 1,
-            // Buttons
-            forward: $wrap.find('.forward'), 
-            backward: $wrap.find('.backward'), 
-            prev: $wrap.find('.prev'), 
-            next: $wrap.find('.next'), 
-            prevPage: $wrap.find('.prevPage'), 
-            nextPage: $wrap.find('.nextPage')
-        });
-        // Add item
-        $wrap.find('.add').on('click', function () {
-            $frame.sly('add', '<li>' + $slidee.children().length + '</li>');
-        });
-    }());
-
-    (function () {
-        // Basic Navigation
-        let $frame = $('#servicesBUH');
-        let $slidee = $frame.children('ul').eq(0);
-        let $wrap = $frame.parent();
-        // Call Sly on frame
-        $frame.sly({
-            horizontal: 1,
-            itemNav: 'centered',
-            smart: 1,
-            activateOn: 'click',
-            mouseDragging: 1,
-            touchDragging: 1,
-            releaseSwing: 1,
-            startAt: 4,
-            scrollBar: $wrap.find('.scrollbar'),
-            scrollBy: 1,
-            speed: 300,
-            elasticBounds: 1,
-            easing: 'easeOutExpo',
-            dragHandle: 1,
-            dynamicHandle: 1,
-            clickBar: 1,
-            // Buttons
-            forward: $wrap.find('.forward'), 
-            backward: $wrap.find('.backward'), 
-            prev: $wrap.find('.prev'), 
-            next: $wrap.find('.next'), 
-            prevPage: $wrap.find('.prevPage'), 
-            nextPage: $wrap.find('.nextPage')
-        });
-        // Add item
-        $wrap.find('.add').on('click', function () {
-            $frame.sly('add', '<li>' + $slidee.children().length + '</li>');
-        });
-    }());
-
-    (function () {
-        // Basic Navigation
-        let $frame = $('#servicesIT');
-        let $slidee = $frame.children('ul').eq(0);
-        let $wrap = $frame.parent();
-        // Call Sly on frame
-        $frame.sly({
-            horizontal: 1,
-            itemNav: 'centered',
-            smart: 1,
-            activateOn: 'click',
-            mouseDragging: 1,
-            touchDragging: 1,
-            releaseSwing: 1,
-            startAt: 4,
-            scrollBar: $wrap.find('.scrollbar'),
-            scrollBy: 1,
-            speed: 300,
-            elasticBounds: 1,
-            easing: 'easeOutExpo',
-            dragHandle: 1,
-            dynamicHandle: 1,
-            clickBar: 1,
-            // Buttons
-            forward: $wrap.find('.forward'), 
-            backward: $wrap.find('.backward'), 
-            prev: $wrap.find('.prev'), 
-            next: $wrap.find('.next'), 
-            prevPage: $wrap.find('.prevPage'), 
-            nextPage: $wrap.find('.nextPage')
-        });
-        // Add item
-        $wrap.find('.add').on('click', function () {
-            $frame.sly('add', '<li>' + $slidee.children().length + '</li>');
-        });
-    }());
 });
