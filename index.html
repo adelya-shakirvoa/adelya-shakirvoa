@@ -33,6 +33,7 @@
         <div class="t_center media_base_width cover-tb">
             <div class="cover-cont">
 
+                <div class="cover-ava"></div>
                 <h1>Бухгалтерия и IT-услуги</h1>
                 <p class="hide">
                     <i class="fa fa-play-circle-o" aria-hidden="true"></i> смотреть видео
@@ -45,9 +46,8 @@
     <header class="center hat">
         <div class="t_center p_relative hat-container">
 
-            <div class="tl p_absolute hat-container-decor-left"></div>
-            <div class="p_absolute hat-container-decor-center"></div>
-            <div class="tr p_absolute hat-container-decor-right"></div>
+            <div class="p_absolute hat-container-decor-left"></div>
+            <div class="p_absolute hat-container-decor-right"></div>
 
             <a href="//:javascript">
                 <span><i class="fa fa-bars" aria-hidden="true"></i></span>
@@ -58,15 +58,15 @@
 
     <div class="tl base_height base_width hide p_fixed overlay"></div>
 
-    <div class="tl base_height hide p_fixed main-menu">
-        <div class="tl p_absolute main-menu-back"></div>
+    <div class="base_height hide p_fixed main-menu">
+        <div class="p_absolute main-menu-back"></div>
         <div class="castration p_relative main-menu-cont">
             <nav>
                 <ul>
 
                     <li class="t_center base_width p_relative"><a class="scroll-to" href="#aboutme">Обо мне</a></li>
                     <li class="t_center base_width p_relative"><a class="scroll-to" href="#revievs">Отзывы</a></li>
-                    <li class="t_center base_width p_relative"><a href="#">Консультация</a></li>
+                    <li class="t_center base_width p_relative"><a class="scroll-to" href="#welcome">Консультация</a></li>
                     <li class="t_center base_width p_relative"><a class="scroll-to" href="#services">Услуги</a></li>
                     <li class="t_center base_width p_relative"><a class="scroll-to" href="#doc">Дипломы</a></li>
                     <li class="t_right max fl p_relative"><a href="https://vk.com/adelbuh" target="_blank">
@@ -95,26 +95,26 @@
 
         </section>
 
-        <section class="t_center castration center media_base_width wrap-revievs">
+        <section class="t_center castration center media_base_width wrap-revievs" id="revievs">
 
             <p>Мы можем бесконечно долго говорить о красоте сходящейся отчётности, консультациях, меняющих взгляд на вещи, но лучше всего о нас расскажут наши клиенты:</p>
 
             <div class="t_center p_relative testimonials">
                 <div class="scroller">
                     <div class="item">
-                        <iframe src="https://vk.com/video_ext.php?oid=-209795771&id=456239017&hash=fe227b50c3d6368b&hd=1" allow="autoplay; encrypted-media; fullscreen; picture-in-picture;" allowfullscreen></iframe>
+                        <iframe class="base_width" src="https://vk.com/video_ext.php?oid=-209795771&id=456239017&hash=fe227b50c3d6368b&hd=1" allow="autoplay; encrypted-media; fullscreen; picture-in-picture;" allowfullscreen></iframe>
                     </div>
                     <div class="item">
-                        <iframe src="https://vk.com/video_ext.php?oid=-209795771&id=456239018&hash=4047c4433863bdeb&hd=1" allow="autoplay; encrypted-media; fullscreen; picture-in-picture;" allowfullscreen></iframe>
+                        <iframe class="base_width" src="https://vk.com/video_ext.php?oid=-209795771&id=456239018&hash=4047c4433863bdeb&hd=1" allow="autoplay; encrypted-media; fullscreen; picture-in-picture;" allowfullscreen></iframe>
                     </div>
                     <div class="item">
-                        <iframe src="https://vk.com/video_ext.php?oid=-209795771&id=456239019&hash=22b0cd33287fcdb0&hd=1" allow="autoplay; encrypted-media; fullscreen; picture-in-picture;" allowfullscreen></iframe>
+                        <iframe class="base_width" src="https://vk.com/video_ext.php?oid=-209795771&id=456239019&hash=22b0cd33287fcdb0&hd=1" allow="autoplay; encrypted-media; fullscreen; picture-in-picture;" allowfullscreen></iframe>
                     </div>
                     <div class="item">
-                        <iframe src="https://vk.com/video_ext.php?oid=-209795771&id=456239020&hash=dfcf2035153b8bda&hd=2" allow="autoplay; encrypted-media; fullscreen; picture-in-picture;" allowfullscreen></iframe>
+                        <iframe class="base_width" src="https://vk.com/video_ext.php?oid=-209795771&id=456239020&hash=dfcf2035153b8bda&hd=2" allow="autoplay; encrypted-media; fullscreen; picture-in-picture;" allowfullscreen></iframe>
                     </div>
                     <div class="item">
-                        <iframe src="https://vk.com/video_ext.php?oid=-209795771&id=456239021&hash=bc35c44967773522&hd=1" allow="autoplay; encrypted-media; fullscreen; picture-in-picture;" allowfullscreen></iframe>
+                        <iframe class="base_width" src="https://vk.com/video_ext.php?oid=-209795771&id=456239021&hash=bc35c44967773522&hd=1" allow="autoplay; encrypted-media; fullscreen; picture-in-picture;" allowfullscreen></iframe>
                     </div>
                 </div>
                 <span class="t_center p_absolute btn prev">&lt;</span>
@@ -122,10 +122,10 @@
             </div>
         </section>
 
-        <section class="t_center castration center base_width wrap-welcome">
+        <section class="t_center castration center base_width wrap-welcome" id="welcome">
 
             <p>
-                <a class="btn-global" href="#">Консультация</a> <a class="scroll-to btn-global" href="#title-services">Услуги</a>
+                <a class="btn-global" href="https://wa.me/1XXXXXXXXXX" target="_blank">Консультация</a> <a class="scroll-to btn-global" href="#title-services">Услуги</a>
             </p>
 
         </section>
@@ -147,27 +147,16 @@
                     <table class="base_width bordered">
                         <tbody>
                             <tr>
-                                <td>Составление и отправка отчетности в налоговую и фонды</td>
-                            </tr>
-                            <tr>
-                                <td>Оптимизация налогообложения, предварительный расчет налогов до окончания квартала</td>
-                            </tr>
-                            <tr>
                                 <td>Консультирование</td>
                             </tr>
-                                <td>Восстановление бухгалтерии и налогового учета, сдача корректировок</td>
+                            <tr>
+                                <td>Банковские продукты</td>
+                            </tr>
+                            <tr>
+                                <td>Регистрация ООО и ИП</td>
                             </tr>
                             <tr>
                                 <td>Кадровое делопроизводство</td>
-                            </tr>
-                            <tr>
-                                <td>Оформление выплат из ФСС по больничным и другим страховым случаям (это просто законы поменялись )</td>
-                            </tr>
-                            <tr>
-                                <td>Подготовка к камеральным и выездным проверкам, работа с требованиями</td>
-                            </tr>
-                            <tr>
-                                <td>Возврат переплат/ излишне взысканных средств из ФНС</td>
                             </tr>
                             <tr>
                                 <td>Оформление зачетов по налогам</td>
@@ -176,13 +165,25 @@
                                 <td>Внешнеэкономическая деятельность со странами ТС</td>
                             </tr>
                             <tr>
-                                <td>Регистрация ООО и ИП</td>
+                                <td>Возврат переплат/ излишне взысканных средств из ФНС</td>
+                            </tr>
+                            <tr>
+                                <td>Составление и отправка отчетности в налоговую и фонды</td>
                             </tr>
                             <tr>
                                 <td>Анализ финансовой деятельности и управленческая отчетность</td>
                             </tr>
                             <tr>
-                                <td>Банковские продукты</td>
+                                <td>Восстановление бухгалтерии и налогового учета, сдача корректировок</td>
+                            </tr>
+                            <tr>
+                                <td>Подготовка к камеральным и выездным проверкам, работа с требованиями</td>
+                            </tr>
+                            <tr>
+                                <td>Оптимизация налогообложения, предварительный расчет налогов до окончания квартала</td>
+                            </tr>
+                            <tr>
+                                <td>Оформление выплат из ФСС по больничным и другим страховым случаям (это просто законы поменялись )</td>
                             </tr>
                         </tbody>
                     </table>
@@ -191,16 +192,7 @@
                     <table class="base_width bordered">
                         <tbody>
                             <tr>
-                                <td>Установка операционных систем, драйверов и программного обеспечения</td>
-                            </tr>
-                            <tr>
-                                <td>Установка, настройка и обновление систем 1с</td>
-                            </tr>
-                            <tr>
-                                <td>Установка ключей и систем сдачи электронной отчетности</td>
-                            </tr>
-                            <tr>
-                                <td>Работа с электронными торговыми площадками</td>
+                                <td>Настройка IP-телефонии</td>
                             </tr>
                             <tr>
                                 <td>Внедрение CRM-системы</td>
@@ -209,13 +201,22 @@
                                 <td>Внедрение ЭДО-системы</td>
                             </tr>
                             <tr>
-                                <td>Настройка IP-телефонии</td>
-                            </tr>
-                            <tr>
                                 <td>Ремонт ПК, ноутбуков и т.п.</td>
                             </tr>
                             <tr>
+                                <td>Установка, настройка и обновление систем 1с</td>
+                            </tr>
+                            <tr>
+                                <td>Работа с электронными торговыми площадками</td>
+                            </tr>
+                            <tr>
                                 <td>Создание сайтов, интернет-магазинов и сопровождение</td>
+                            </tr>
+                            <tr>
+                                <td>Установка ключей и систем сдачи электронной отчетности</td>
+                            </tr>
+                            <tr>
+                                <td>Установка операционных систем, драйверов и программного обеспечения</td>
                             </tr>
                         </tbody>
                     </table>
@@ -228,33 +229,44 @@
 
             <h3>Наши дипломы</h3>
 
-            <div class="center grid">
-                <div class="t_center p_relative grid__item">
-                    <img src="img/doc/3.png" />
+            <div class="slider">
+                <div class="slider__wrapper">
+                    <div class="slider__items">
+                        <div class="slider__item">
+                            <img src="img/doc/3.png" />
+                        </div>
+                        <div class="slider__item">
+                            <img src="img/doc/2.png" />
+                        </div>
+                        <div class="slider__item">
+                            <img src="img/doc/1.png" />
+                        </div>
+                        <div class="slider__item">
+                            <img src="img/doc/4.png" />
+                        </div>
+                        <div class="slider__item">
+                            <img src="img/doc/5.jpg" />
+                        </div>
+                        <div class="slider__item">
+                            <img src="img/doc/7.jpg" />
+                        </div>
+                        <div class="slider__item">
+                            <img src="img/doc/6.jpg" />
+                        </div>
+                        <div class="slider__item">
+                            <img src="img/doc/8.jpg" />
+                        </div>
+                        <div class="slider__item">
+                            <img src="img/doc/9.jpg" />
+                        </div>
+                        <div class="slider__item">
+                            <img src="img/doc/10.jpg" />
+                        </div>
+                    </div>
                 </div>
-                <div class="t_center p_relative grid__item">
-                    <img src="img/doc/2.png" />
-                </div>
-                <div class="t_center p_relative grid__item">
-                    <img src="img/doc/1.png" />
-                </div>
-                <div class="t_center p_relative grid__item">
-                    <img src="img/doc/4.png" />
-                </div>
-                <div class="t_center p_relative grid__item">
-                    <img src="img/doc/5.jpg" />
-                </div>
-                <div class="t_center p_relative grid__item">
-                    <img src="img/doc/7.jpg" />
-                </div>
-                <div class="t_center p_relative grid__item">
-                    <img src="img/doc/6.jpg" />
-                </div>
-                <div class="t_center p_relative grid__item">
-                    <img src="img/doc/8.jpg" />
-                </div>
+                <a class="slider__control slider__control_prev" href="#" role="button" data-slide="prev"></a>
+                <a class="slider__control slider__control_next" href="#" role="button" data-slide="next"></a>
             </div>
-
         </section>
     </div>
 
@@ -271,6 +283,7 @@
     </footer>
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="js/simple-adaptive-slider.min.js?ver=1.0"></script>
     <script type="text/javascript" src="js/hugr.js?ver=3.1"></script>
 
 </body>

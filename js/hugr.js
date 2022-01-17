@@ -83,3 +83,14 @@ $(function() {
             .closest('div.tabs').find('div.tabs__content').removeClass('active').eq($(this).index()).addClass('active');
     });
 });
+
+// Slider 2
+document.addEventListener('DOMContentLoaded', function () {
+    // инициализация слайдера
+    let slider = new SimpleAdaptiveSlider('.slider', {
+        loop: false, 
+        autoplay: false, 
+        interval: 5000, 
+        swipe: false,
+    });
+});
