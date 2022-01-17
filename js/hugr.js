@@ -39,11 +39,13 @@ $("a.scroll-to").on("click", function(e) {
     e.preventDefault();
     let anchor = $(this).attr('href');
 
-    toggleNav();
-
     $('html, body').stop().animate({
         scrollTop: $(anchor).offset().top - 60
     }, 800);
+});
+
+$("nav a.scroll-to").on("click", function(e) {
+    toggleNav();
 });
 
 // Scroller
