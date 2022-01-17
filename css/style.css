@@ -345,6 +345,23 @@ option {
 
 .hat-container a {color: #fff;}
 
+.hat-container > a > span {
+    height: 1px;
+    left: 0;
+    background-color: #fff;
+}
+.p_one {
+    transform: rotate(10deg);
+}
+.p_two {
+    top: 15px;
+    transform: rotate(-10deg);
+}
+.p_three {
+    top: 30px;
+    transform: rotate(10deg);
+}
+
 .hat-container-decor-left, .hat-container-decor-right {
     display: block;
     bottom: 0;
