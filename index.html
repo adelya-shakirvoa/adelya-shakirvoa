@@ -22,6 +22,7 @@
     <link rel="canonical" href="https://adelbuh.ru" />
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&family=Poiret+One&display=swap" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
     <link href="css/style.css?ver=3.2" rel="stylesheet" />
 </head>
 
@@ -66,7 +67,7 @@
 
                     <li class="t_center base_width p_relative"><a class="scroll-to" href="#aboutme">О нас</a></li>
                     <li class="t_center base_width p_relative"><a class="scroll-to" href="#revievs">Отзывы</a></li>
-                    <li class="t_center base_width p_relative"><a class="scroll-to" href="#welcome">Консультация</a></li>
+                    <li class="t_center base_width p_relative"><a class="scroll-to" href="https://wa.me/79173892000" target="_blank">Консультация</a></li>
                     <li class="t_center base_width p_relative"><a class="scroll-to" href="#services">Услуги</a></li>
                     <li class="t_center base_width p_relative"><a class="scroll-to" href="#doc">Дипломы</a></li>
                     <li class="t_right max fl p_relative"><a href="https://vk.com/adelbuh" target="_blank">
@@ -81,6 +82,10 @@
             <div class="t_center p_fixed menu-close"></div>
         </div>
     </div>
+
+    <a class="p_fixed btn-global" href="https://wa.me/79173892000" target="_blank">
+        <i class="fa fa-whatsapp" aria-hidden="true"></i>
+    </a>
 
     <div class="castration base_width p_relative wrap">
         <section class="castration center media_base_width wrap-welcome" id="aboutme">
@@ -99,35 +104,53 @@
 
             <p>Мы можем бесконечно долго говорить о красоте сходящейся отчётности, консультациях, меняющих взгляд на вещи, но лучше всего о нас расскажут наши клиенты:</p>
 
-            <div class="t_center p_relative testimonials">
-                <div class="scroller">
-                    <div class="item">
-                        <iframe class="base_width" src="https://vk.com/video_ext.php?oid=-209795771&id=456239017&hash=fe227b50c3d6368b&hd=1" allow="autoplay; encrypted-media; fullscreen; picture-in-picture;" allowfullscreen></iframe>
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="card-group">
+                            <div class="border-0 me-3 card">
+                                <iframe class="base_width" src="https://vk.com/video_ext.php?oid=-209795771&id=456239017&hash=fe227b50c3d6368b&hd=1" allow="autoplay; encrypted-media; fullscreen; picture-in-picture;" allowfullscreen></iframe>
+                            </div>
+                            <div class="border-0 me-3 card">
+                                <iframe class="base_width" src="https://vk.com/video_ext.php?oid=-209795771&id=456239018&hash=4047c4433863bdeb&hd=1" allow="autoplay; encrypted-media; fullscreen; picture-in-picture;" allowfullscreen></iframe>
+                            </div>
+                        </div>
                     </div>
-                    <div class="item">
-                        <iframe class="base_width" src="https://vk.com/video_ext.php?oid=-209795771&id=456239018&hash=4047c4433863bdeb&hd=1" allow="autoplay; encrypted-media; fullscreen; picture-in-picture;" allowfullscreen></iframe>
+                    <div class="carousel-item">
+                        <div class="card-group">
+                            <div class="border-0 me-3 card">
+                                <iframe class="base_width" src="https://vk.com/video_ext.php?oid=-209795771&id=456239019&hash=22b0cd33287fcdb0&hd=1" allow="autoplay; encrypted-media; fullscreen; picture-in-picture;" allowfullscreen></iframe>
+                            </div>
+                            <div class="border-0 me-3 card">
+                                <iframe class="base_width" src="https://vk.com/video_ext.php?oid=-209795771&id=456239020&hash=dfcf2035153b8bda&hd=2" allow="autoplay; encrypted-media; fullscreen; picture-in-picture;" allowfullscreen></iframe>
+                            </div>
+                        </div>
                     </div>
-                    <div class="item">
-                        <iframe class="base_width" src="https://vk.com/video_ext.php?oid=-209795771&id=456239019&hash=22b0cd33287fcdb0&hd=1" allow="autoplay; encrypted-media; fullscreen; picture-in-picture;" allowfullscreen></iframe>
-                    </div>
-                    <div class="item">
-                        <iframe class="base_width" src="https://vk.com/video_ext.php?oid=-209795771&id=456239020&hash=dfcf2035153b8bda&hd=2" allow="autoplay; encrypted-media; fullscreen; picture-in-picture;" allowfullscreen></iframe>
-                    </div>
-                    <div class="item">
-                        <iframe class="base_width" src="https://vk.com/video_ext.php?oid=-209795771&id=456239021&hash=bc35c44967773522&hd=1" allow="autoplay; encrypted-media; fullscreen; picture-in-picture;" allowfullscreen></iframe>
+                    <div class="carousel-item">
+                        <div class="card-group">
+                            <div class="border-0 me-3 card">
+                                <iframe class="base_width" src="https://vk.com/video_ext.php?oid=-209795771&id=456239021&hash=bc35c44967773522&hd=1" allow="autoplay; encrypted-media; fullscreen; picture-in-picture;" allowfullscreen></iframe>
+                            </div>
+                            <div class="border-0 me-3 card">
+                                <iframe src="https://vk.com/video_ext.php?oid=-209795771&id=456239022&hash=69cf1dd3e5e850af&hd=2" width="853" height="480" allow="autoplay; encrypted-media; fullscreen; picture-in-picture;" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <span class="t_center p_absolute btn prev">&lt;</span>
-                <span class="t_center p_absolute btn next">&gt;</span>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
-        </section>
-
-        <section class="t_center castration center base_width wrap-welcome" id="welcome">
-
-            <p>
-                <a class="btn-global" href="https://wa.me/79173892000" target="_blank">Консультация</a>
-            </p>
-
         </section>
 
         <section class="t_center castration center base_width wrap-services" id="services">
@@ -136,92 +159,97 @@
                 <span id="title-services">Услуги</span>
             </h4>
 
-            <div class="base_width tabs">
-
-                <ul class="tabs__caption">
-                    <li class="t_right max fl active">Бухгалтерия</li>
-                    <li class="t_left max fl">IT-услуги</li>
-                </ul>
-
-                <div class="tabs__content active">
-                    <table class="base_width bordered">
-                        <tbody>
-                            <tr>
-                                <td>Консультирование</td>
-                            </tr>
-                            <tr>
-                                <td>Банковские продукты</td>
-                            </tr>
-                            <tr>
-                                <td>Регистрация ООО и ИП</td>
-                            </tr>
-                            <tr>
-                                <td>Кадровое делопроизводство</td>
-                            </tr>
-                            <tr>
-                                <td>Оформление зачетов по налогам</td>
-                            </tr>
-                            <tr>
-                                <td>Внешнеэкономическая деятельность со странами ТС</td>
-                            </tr>
-                            <tr>
-                                <td>Возврат переплат/ излишне взысканных средств из ФНС</td>
-                            </tr>
-                            <tr>
-                                <td>Составление и отправка отчетности в налоговую и фонды</td>
-                            </tr>
-                            <tr>
-                                <td>Анализ финансовой деятельности и управленческая отчетность</td>
-                            </tr>
-                            <tr>
-                                <td>Восстановление бухгалтерии и налогового учета, сдача корректировок</td>
-                            </tr>
-                            <tr>
-                                <td>Оформление выплат из ФСС по больничным и другим страховым случаям</td>
-                            </tr>
-                            <tr>
-                                <td>Подготовка к камеральным и выездным проверкам, работа с требованиями</td>
-                            </tr>
-                            <tr>
-                                <td>Оптимизация налогообложения, предварительный расчет налогов до окончания квартала</td>
-                            </tr>
-                        </tbody>
-                    </table>
+            <div id="carouselExampleIndicators2" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <h3 class="fs-3 badge bg-danger">Бухгалтерия</h3>
+                        <table class="base_width bordered">
+                            <tbody>
+                                <tr>
+                                    <td>Консультирование</td>
+                                </tr>
+                                <tr>
+                                    <td>Банковские продукты</td>
+                                </tr>
+                                <tr>
+                                    <td>Регистрация ООО и ИП</td>
+                                </tr>
+                                <tr>
+                                    <td>Кадровое делопроизводство</td>
+                                </tr>
+                                <tr>
+                                    <td>Оформление зачетов по налогам</td>
+                                </tr>
+                                <tr>
+                                    <td>Внешнеэкономическая деятельность со странами ТС</td>
+                                </tr>
+                                <tr>
+                                    <td>Возврат переплат/ излишне взысканных средств из ФНС</td>
+                                </tr>
+                                <tr>
+                                    <td>Составление и отправка отчетности в налоговую и фонды</td>
+                                </tr>
+                                <tr>
+                                    <td>Анализ финансовой деятельности и управленческая отчетность</td>
+                                </tr>
+                                <tr>
+                                    <td>Восстановление бухгалтерии и налогового учета, сдача корректировок</td>
+                                </tr>
+                                <tr>
+                                    <td>Оформление выплат из ФСС по больничным и другим страховым случаям</td>
+                                </tr>
+                                <tr>
+                                    <td>Подготовка к камеральным и выездным проверкам, работа с требованиями</td>
+                                </tr>
+                                <tr>
+                                    <td>Оптимизация налогообложения, предварительный расчет налогов до окончания квартала</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="carousel-item">
+                        <h3 class="fs-3 badge bg-danger">IT-услуги</h3>
+                        <table class="base_width bordered">
+                            <tbody>
+                                <tr>
+                                    <td>Настройка IP-телефонии</td>
+                                </tr>
+                                <tr>
+                                    <td>Внедрение CRM-системы</td>
+                                </tr>
+                                <tr>
+                                    <td>Внедрение ЭДО-системы</td>
+                                </tr>
+                                <tr>
+                                    <td>Ремонт ПК, ноутбуков и т.п.</td>
+                                </tr>
+                                <tr>
+                                    <td>Установка, настройка и обновление систем 1с</td>
+                                </tr>
+                                <tr>
+                                    <td>Работа с электронными торговыми площадками</td>
+                                </tr>
+                                <tr>
+                                    <td>Создание сайтов, интернет-магазинов и сопровождение</td>
+                                </tr>
+                                <tr>
+                                    <td>Установка ключей и систем сдачи электронной отчетности</td>
+                                </tr>
+                                <tr>
+                                    <td>Установка операционных систем, драйверов и программного обеспечения</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
-                <div class="tabs__content">
-                    <table class="base_width bordered">
-                        <tbody>
-                            <tr>
-                                <td>Настройка IP-телефонии</td>
-                            </tr>
-                            <tr>
-                                <td>Внедрение CRM-системы</td>
-                            </tr>
-                            <tr>
-                                <td>Внедрение ЭДО-системы</td>
-                            </tr>
-                            <tr>
-                                <td>Ремонт ПК, ноутбуков и т.п.</td>
-                            </tr>
-                            <tr>
-                                <td>Установка, настройка и обновление систем 1с</td>
-                            </tr>
-                            <tr>
-                                <td>Работа с электронными торговыми площадками</td>
-                            </tr>
-                            <tr>
-                                <td>Создание сайтов, интернет-магазинов и сопровождение</td>
-                            </tr>
-                            <tr>
-                                <td>Установка ключей и систем сдачи электронной отчетности</td>
-                            </tr>
-                            <tr>
-                                <td>Установка операционных систем, драйверов и программного обеспечения</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
         </section>
 
@@ -229,43 +257,47 @@
 
             <h3>Наши дипломы</h3>
 
-            <div class="slider">
-                <div class="slider__wrapper">
-                    <div class="slider__items">
-                        <div class="slider__item">
-                            <img src="img/doc/3.png" />
-                        </div>
-                        <div class="slider__item">
-                            <img src="img/doc/2.png" />
-                        </div>
-                        <div class="slider__item">
-                            <img src="img/doc/1.png" />
-                        </div>
-                        <div class="slider__item">
-                            <img src="img/doc/4.png" />
-                        </div>
-                        <div class="slider__item">
-                            <img src="img/doc/5.jpg" />
-                        </div>
-                        <div class="slider__item">
-                            <img src="img/doc/7.jpg" />
-                        </div>
-                        <div class="slider__item">
-                            <img src="img/doc/6.jpg" />
-                        </div>
-                        <div class="slider__item">
-                            <img src="img/doc/8.jpg" />
-                        </div>
-                        <div class="slider__item">
-                            <img src="img/doc/9.jpg" />
-                        </div>
-                        <div class="slider__item">
-                            <img src="img/doc/10.jpg" />
-                        </div>
+            <div id="carouselExampleIndicators3" class="carousel carousel-dark slide" data-bs-ride="carousel" data-bs-interval="false">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/doc/3.png" />
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/doc/2.png" />
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/doc/1.png" />
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/doc/4.png" />
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/doc/5.jpg" />
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/doc/7.jpg" />
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/doc/6.jpg" />
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/doc/8.jpg" />
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/doc/9.jpg" />
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/doc/10.jpg" />
                     </div>
                 </div>
-                <a class="slider__control slider__control_prev" href="#" role="button" data-slide="prev"></a>
-                <a class="slider__control slider__control_next" href="#" role="button" data-slide="next"></a>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
         </section>
     </div>
@@ -283,7 +315,7 @@
     </footer>
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-    <script type="text/javascript" src="js/simple-adaptive-slider.min.js?ver=1.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script type="text/javascript" src="js/hugr.js?ver=3.3"></script>
 
 </body>
