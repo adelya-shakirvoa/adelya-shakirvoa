@@ -248,7 +248,7 @@ a.btn-global:hover {opacity: .6;}
     left: -35px;
     background-color: #fff;
     transition: all linear .6s;
-    -webkit-transition: all linear .6s;
+    -webkit-transition: all linear .3s;
 }
 .hat-container > a:after {
     position: absolute;
