@@ -302,7 +302,8 @@ a.btn-global:hover {opacity: .6;}
 .menu-close:before {
     display: inline-block;
     transform: rotate(-45deg);
-    text-align: center; font-family: "FontAwesome"; font-size: 7vh; content: '\f00d'; color: #fff;
+    margin-left: 5px;
+    text-align: center; font-size: 7vh; line-height: normal; content: '\2573'; color: #fff;
     cursor: pointer;
 }
 .menu-close:hover {opacity: .6;}
@@ -322,7 +323,7 @@ nav {
     width: 80%; height: 80%;
     transform: rotate(-45deg);
     overflow-y: auto;
-    font-family: 'Poiret One', cursive; font-size: 9vh;
+    font-family: 'Poiret One', cursive; font-size: 6vh;
 }
 nav:after {
     position: absolute;
@@ -332,6 +333,8 @@ nav:after {
     box-shadow: -20px -20px 20px #000 inset;
     pointer-events: none;
 }
+
+nav ul {padding-left: 0;}
 
 nav li {
     display: block;
@@ -345,7 +348,10 @@ nav a {
     display: inline-block;
     color: #fff; text-decoration: none;
 }
-nav a:hover {opacity: .6;}
+nav a:hover {
+    opacity: .6;
+    color: #b22;
+}
 
 /* Контейнеры
  */
