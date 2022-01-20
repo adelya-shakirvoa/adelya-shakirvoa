@@ -64,11 +64,9 @@ iframe {
 }
 
 button.btn {
-    width: 60px; height: 60px;
     background-color: transparent;
     border-width: 2px;
     border-style: solid;
-    border-radius: 50%;
 }
 .wrap-welcome button.btn {color: #000;}
 .wrap-services button.btn {color: #fff;}
@@ -248,7 +246,7 @@ a.btn-global:hover {opacity: .6;}
     left: -35px;
     background-color: #fff;
     transition: all linear .6s;
-    -webkit-transition: all linear .3s;
+    -webkit-transition: all linear .2s;
 }
 .hat-container > a:after {
     position: absolute;
@@ -451,3 +449,14 @@ nav a:hover {
 }
 
 .shoes > div {padding: 15px;}
+
+/* Cookie
+ */
+.cookie-disclaimer {
+    z-index: 999;
+    position: fixed;
+    bottom: 80px;
+    left: 50%; transform: translateX(-50%);
+}
+
+.cookie-disclaimer a {color: #000;}
