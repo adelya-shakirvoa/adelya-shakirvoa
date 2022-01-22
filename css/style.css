@@ -564,6 +564,7 @@ nav a:hover {
     position: fixed;
     bottom: 80px;
     left: 50%; transform: translateX(-50%);
+    font-size: 70%;
 }
 
 .cookie-disclaimer a {color: #000;}
