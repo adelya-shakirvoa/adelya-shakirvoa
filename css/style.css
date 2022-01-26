@@ -43,8 +43,6 @@ h1, h2, h3, h4, h5, h6 {
     text-rendering: optimizeLegibility; font-family: 'Poiret One', cursive;
 }
 
-h1 {font-size: 400%;}
-h2 {font-size: 350%;}
 h2, .wrap-doc h3 {text-transform: uppercase;}
 .wrap > section:not(.wrap-services):not(.wrap-doc) h3 {padding-bottom: 20px;}
 .wrap > section.wrap-services > h3 {padding-top: 50px;}
@@ -523,7 +521,7 @@ nav a:hover {
     margin: 10px 0px;
     background: transparent;
     border-bottom: 1px solid #333;
-    font-size: 200%; line-height: 200%;
+    font-size: 150%; line-height: 150%;
 }
 
 .bordered th {
