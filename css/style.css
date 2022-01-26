@@ -29,6 +29,7 @@ body {
   font-size: 16px; font-weight: normal;
   -webkit-font-smoothing: antialiased;
 }
+.contact {background: #f4f4f4;}
 
 a {
     margin: 0; padding: 0;
@@ -72,16 +73,21 @@ button.btn {
 .wrap-services button.btn {color: #fff;}
 button.btn:hover {opacity: .6;}
 
-a.btn-global {
+.btn-global {
     z-index: 9;
-    top: 25px; left: 0;
+    top: 5px; left: 0;
     padding: 15px 30px;
     border-radius: 6px;
-    font-size: 300%; text-decoration: none; color: green;
+    font-size: 300%;
 }
-.wrap > section:not(.wrap-revievs) a.btn-global {background-color: #181818; color: #fff;}
-.wrap > .wrap-revievs + .wrap-welcome a.btn-global {background-color: #fff; color: #181818;}
-a.btn-global:hover {opacity: .6;}
+.btn-global a {text-decoration: none;}
+.fa-whatsapp {color: green;}
+.fa-envelope-o {color: #dc3545;}
+
+@media all and (max-width: 900px) {
+    .btn-global {top: 0;}
+    .btn-global a {display: block;}
+}
 
 /* Стилизация скроллбара
  */
