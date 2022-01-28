@@ -227,7 +227,7 @@ button.btn:hover {opacity: .6;}
     filter: drop-shadow(0 0 5px #000);
     background-image: url(../img/cover.jpg);
     background-size: 130%;
-    background-position: -40px 50%;
+    background-position: -40px calc(50% + 30px);
     background-repeat: no-repeat;
 }
 
@@ -488,7 +488,7 @@ nav a:hover {
 
 .wrap-welcome {padding-right: 10%; padding-left: 10%;}
 
-.wrap-welcome, .wrap-revievs {color: #000;}
+.wrap-revievs {color: #000;}
 
 .wrap > .wrap-welcome:first-child {padding-top: 100px;}
 
@@ -501,15 +501,13 @@ nav a:hover {
 
 .wrap > .wrap-revievs + .wrap-welcome h3, .wrap-doc h3 {padding-bottom: 20px;}
 
-.wrap-revievs, .wrap-services, .wrap-doc {font-family: 'Open Sans Condensed', sans-serif;}
+.wrap-welcome, .wrap-services, .wrap-doc, .wrap-revievs {font-family: 'Open Sans Condensed', sans-serif;}
 
 .wrap-services, .wrap-doc {padding-top: 50px; padding-bottom: 50px;}
 
-.wrap-services {margin-top: 30px;}
+.wrap-services, #carouselExampleIndicators2 {margin-top: 30px;}
 
 .wrap-revievs p {margin: 44px 20% 11px;}
-
-.wrap-welcome p, .wrap-revievs p {font-size: 140%; font-family: 'Poiret One', cursive; font-weight: normal; text-shadow: 0px 1px 0 rgb(0, 0, 0);}
 
 .wrap-revievs .fl, .wrap-revievs .fr {
     height: 50vh;
