@@ -74,9 +74,9 @@ button.btn:hover {opacity: .6;}
 .btn-global {
     z-index: 9;
     top: 5px; left: 0;
-    padding: 15px 30px;
+    padding: 15px 10px;
     border-radius: 6px;
-    font-size: 300%;
+    font-size: 200%;
 }
 .btn-global a {text-decoration: none;}
 .fa-whatsapp {color: green;}
@@ -516,8 +516,9 @@ nav a:hover {
  */
 .blog {padding-top: 100px; padding-bottom: 100px;}
 
-.blog-post {padding-right: 15px; padding-left: 15px;}
+.blog-post {padding-right: 50px; padding-left: 50px;}
 .blog-post p {font-size: 110%;}
+.blog-post a {color: #000;}
 
 /* Tabl
  */
@@ -549,10 +550,8 @@ nav a:hover {
     border-left: 1px solid #4a4a4a;
 }
 
-.bordered td {
-    border-top: 1px solid #4a4a4a;
-    color: #eee;
-}
+.bordered td {border-top: 1px solid #4a4a4a;}
+.bordered td, .bordered td a {color: #eee;}
 
 /* Подвал
  */
